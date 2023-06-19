@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "722437932614",
+    "project_id": "chemapp-4c073",
+    "storage_bucket": "chemapp-4c073.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722437932614:android:29f1beb90da315cc1bac47",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.chemistryApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722437932614-87f8sho6q8b5upgvmniq22f9rko5jvcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMdMp1_iAP-aojwoeUCj_jb-0vqreJW-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722437932614-87f8sho6q8b5upgvmniq22f9rko5jvcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
