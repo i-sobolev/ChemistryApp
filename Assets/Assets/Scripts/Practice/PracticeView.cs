@@ -167,6 +167,7 @@ public class PracticeView : MonoBehaviour
 
         Debug.Log($"Answer given: {_currentTask.CorrectAnswer} == {answer} = {_currentTask.CorrectAnswer == answer}");
 
-        StartCoroutine(APIHelper.AddTask(_currentTask.Id));
+        if (_currentTask.CorrectAnswer == answer)
+            StartCoroutine(APIHelper.AddTask(_currentTask.Id));
     }
 }
