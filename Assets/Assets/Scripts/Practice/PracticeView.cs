@@ -92,11 +92,16 @@ public class PracticeView : MonoBehaviour
             {
                 var completedTasks = result.ToList();
 
+                var count = 1;
+
                 foreach (var task in practiceChapter.Tasks)
                 {
                     var button = Instantiate(_taskButtonTemplate, _taskButtonsRoot);
 
-                    button.Set(task.Id.ToString(), completedTasks.Contains(task.Id));
+                    var taskName = $"Задание №{count++}";
+                    task.Name = taskName;
+
+                    button.Set(taskName, completedTasks.Contains(task.Id));
                     button.LinkedPracticeTask = task;
                     button.Clicked += OnPracticeTaskButtonClicked;
                 }
@@ -127,7 +132,7 @@ public class PracticeView : MonoBehaviour
     {
         _currentTask = practiceTask;
 
-        _titleText.SetText("Задание 1");
+        _titleText.SetText(practiceTask.Name);
         _contentText.SetText(practiceTask.TextContent);
 
         _tasksListLayout.SetActive(false);

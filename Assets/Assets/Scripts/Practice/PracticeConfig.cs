@@ -54,4 +54,6 @@ public class PracticeTask
     public int Id { get; set; }
     public string TextContent => _taskÑontent;
     public string CorrectAnswer => _correctAnswer;
+
+    public string Name { get; set; } = string.Empty;
 }
